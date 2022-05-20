@@ -142,7 +142,7 @@ Profile Soil Moisture: - The percent of profile soil moisture a value of 0 indic
     Above is the bar plot of the count of no:of rows related to a pirticular food crop. If we look int the bar plot the is an uneven distribution. For example the count for ONION is more when compared to that of a CABBAGE. This is because different crops are grown in different seasons. Some crops such as Onion are grown through out the year while the crops such as cabbage are grown only in winter or rainy season. This is the reason for the imbalance in the data collect.
   
 
-![plot2.png](attachment:plot2.png)
+![plot2.png](Code/Visualizations/plot2.jpeg)
 
 
     The bar plot above shows the average price of 10 different crops in the entire dataset. 
