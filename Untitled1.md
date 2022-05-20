@@ -167,7 +167,7 @@ Profile Soil Moisture: - The percent of profile soil moisture a value of 0 indic
 
     I intially performed regresion analysis on the dataset to predict the price of a pirticular crop but the resulting root mean square error is very high. So, I while training for a pirticular crop in order to remove the unwanted noise from the training model I thought an idea.
     
-![Screen%20Shot%202022-05-20%20at%2011.08.58%20AM.png](Screen%20Shot%202022-05-20%20at%2012.42.35%20PM.png)
+![](Code/Visualizations/Screen%20Shot%202022-05-20%20at%2012.42.35%20PM.png)
 
     I thought of classifing the data into different crops first and then for each crop I want to divide it into 4 different categories namely Huge Loss, Loss, Profit and Huge Profit based on the percentile values. If a crops price is under 25percentile of the crop I labeled it as HUge Loss, Loss if in between 25 and 50 percentile values, Profit if the crops price lies in betweeen 50 and 75 percetile value and huge profit if it is greataer than 75 percentile. For that I created a new column named P_L_Statement and the categorical value under which the row datafalls. 
     
