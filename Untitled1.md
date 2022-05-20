@@ -136,27 +136,27 @@ Profile Soil Moisture: - The percent of profile soil moisture a value of 0 indic
 
     Here are some of the visulizations to look into the data 
     
-![save_as_a_png%20%281%29.png](attachment:save_as_a_png%20%281%29.png)
+![PLOT1](Code/Visualizations/save_as_a_png%20(1).png)
 
 
     Above is the bar plot of the count of no:of rows related to a pirticular food crop. If we look int the bar plot the is an uneven distribution. For example the count for ONION is more when compared to that of a CABBAGE. This is because different crops are grown in different seasons. Some crops such as Onion are grown through out the year while the crops such as cabbage are grown only in winter or rainy season. This is the reason for the imbalance in the data collect.
   
 
-![plot2.png](Code/Visualizations/plot2.jpeg)
+![PLOT2](Code/Visualizations/plot2.jpeg)
 
 
     The bar plot above shows the average price of 10 different crops in the entire dataset. 
 
-![newplot.png](attachment:newplot.png)
+![newplot.png](Code/Visualizations/newplot%20(1).png)
 
     I checked for potential outliers in the dataset using box plot.From the above box plot we can see that there are some outliers in the dataset. I have deleted these outliers using the interquartile ranges. After deleting these outliers the final dataset consists of 22120 rows out of 28632 original dataset rows
 
-![save_as_a_png5%20%281%29.jpeg](attachment:save_as_a_png5%20%281%29.jpeg)
+![save_as_a_png5%20%281%29.jpeg](Code/Visualizations/save_as_a_png5%20(1).jpeg)
 
 
      By ploting the above line plot, I checked how different crops behave under similar conditions. For example if we check the price of bitter gourd and Chilly form the year 2011 to 2012 under the similar climatic change the price of bitter gourd changes got decreased from 2011 to 2012 and the price of chilly got increased. From this we can come to a conclusion that different crops grow differently under similar climatic conditions.
 
-![save_as_a_png.png](attachment:save_as_a_png.png)
+![save_as_a_png.png](Code/Visualizations/save_as_a_png.png)
 
 
     After taking a look at different visulizations and removing the outliers, I have checked for the corelation among the features with the help of heatmap. If we observe the heatmap only a very few features such as min temp and max temp are co-related. Based on the above heat map I thought of avoiding feature selection or going for any Priciple Component Analysis as this might result to the information loss since most of the data is not highly corelated
@@ -167,7 +167,7 @@ Profile Soil Moisture: - The percent of profile soil moisture a value of 0 indic
 
     I intially performed regresion analysis on the dataset to predict the price of a pirticular crop but the resulting root mean square error is very high. So, I while training for a pirticular crop in order to remove the unwanted noise from the training model I thought an idea.
     
-![Screen%20Shot%202022-05-20%20at%2011.08.58%20AM.png](Code/Visualizations/Screen Shot 2022-05-20 at 12.42.35)
+![Screen%20Shot%202022-05-20%20at%2011.08.58%20AM.png](Screen%20Shot%202022-05-20%20at%2012.42.35%20PM.png)
 
     I thought of classifing the data into different crops first and then for each crop I want to divide it into 4 different categories namely Huge Loss, Loss, Profit and Huge Profit based on the percentile values. If a crops price is under 25percentile of the crop I labeled it as HUge Loss, Loss if in between 25 and 50 percentile values, Profit if the crops price lies in betweeen 50 and 75 percetile value and huge profit if it is greataer than 75 percentile. For that I created a new column named P_L_Statement and the categorical value under which the row datafalls. 
     
